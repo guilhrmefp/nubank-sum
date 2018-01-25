@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gerador de valor Nubank</title>
+  </head>
+
+  <!-- <link rel="stylesheet" href="https://app.nubank.com.br/styles/nu.css"> -->
+  <!-- <link rel="stylesheet" href="main.css"> -->
+  <script src="nu.js"></script>
+  <!-- <script src="main.js"></script> -->
+<body>
+  <div class="content">
+    <button onclick="insertCode()">Inserir checkbox</button>
+  </div>
+  <div class="md-tab-content" style="display: none">
+    <div class="summary">
+      <ul></ul>
+    </div>
+    <div class="bills">
+      <div class="charges">
+        <div class="charges-list ng-scope ng-isolate-scope" bill="bill" ng-if="bill.loaded">
+          <!-- ngIf: failed --><!-- ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">04 Nov</span></div>
+            </div>
+            <div class="charge-data" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                Mercpago-Mercadolivre <!-- ngIf: charge.charges > 1 --><em ng-if="charge.charges > 1" class="ng-binding ng-scope">6/12</em><!-- end ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">110,74</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">04 Nov</span></div>
+            </div>
+            <div class="charge-data" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                Posthaus Com <!-- ngIf: charge.charges > 1 --><em ng-if="charge.charges > 1" class="ng-binding ng-scope">3/4</em><!-- end ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">33,99</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">04 Nov</span></div>
+            </div>
+            <div class="charge-data" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                Posthaus <!-- ngIf: charge.charges > 1 --><em ng-if="charge.charges > 1" class="ng-binding ng-scope">2/2</em><!-- end ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">30,93</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">06 Nov</span></div>
+            </div>
+            <div class="charge-data" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                Uber do Brasil Tecnolo <!-- ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">10,03</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">06 Nov</span></div>
+            </div>
+            <div class="charge-data credit" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                Pagamento recebido <!-- ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">-325,00</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">06 Nov</span></div>
+            </div>
+            <div class="charge-data" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                Sympla <!-- ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">44,00</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">06 Nov</span></div>
+            </div>
+            <div class="charge-data" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                Sympla <!-- ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">22,00</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">07 Nov</span></div>
+            </div>
+            <div class="charge-data" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                Mercadolivre <!-- ngIf: charge.charges > 1 --><em ng-if="charge.charges > 1" class="ng-binding ng-scope">1/4</em><!-- end ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">10,77</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">07 Nov</span></div>
+            </div>
+            <div class="charge-data credit" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                Pagamento recebido <!-- ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">-224,93</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">08 Nov</span></div>
+            </div>
+            <div class="charge-data" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                Phitofarma Farmacia de <!-- ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">78,00</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">11 Nov</span></div>
+            </div>
+            <div class="charge-data" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                Posto de Combustivel e <!-- ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">30,00</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">13 Nov</span></div>
+            </div>
+            <div class="charge-data" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                .*Bcash*Reed <!-- ngIf: charge.charges > 1 --><em ng-if="charge.charges > 1" class="ng-binding ng-scope">1/12</em><!-- end ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">7,21</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">13 Nov</span></div>
+            </div>
+            <div class="charge-data" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                Variação cambial <!-- ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">1,17</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">13 Nov</span></div>
+            </div>
+            <div class="charge-data" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                Uber do Brasil Tecnolo <!-- ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">8,41</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">15 Nov</span></div>
+            </div>
+            <div class="charge-data" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                Edson Oliveira de Jesu <!-- ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">11,70</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">15 Nov</span></div>
+            </div>
+            <div class="charge-data" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                Auto Posto Itavuvu <!-- ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">30,00</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">15 Nov</span></div>
+            </div>
+            <div class="charge-data" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                Tauste <!-- ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">67,63</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">18 Nov</span></div>
+            </div>
+            <div class="charge-data" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                Assai Atacadista <!-- ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">34,37</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">20 Nov</span></div>
+            </div>
+            <div class="charge-data" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                Tauste <!-- ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">76,10</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">21 Nov</span></div>
+            </div>
+            <div class="charge-data" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                Tauste <!-- ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">73,01</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">22 Nov</span></div>
+            </div>
+            <div class="charge-data" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                Edson Oliveira de Jesu <!-- ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">14,11</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">25 Nov</span></div>
+            </div>
+            <div class="charge-data" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                Tecban Mercado Nova <!-- ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">20,00</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">25 Nov</span></div>
+            </div>
+            <div class="charge-data" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                Auto Posto Itavuvu <!-- ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">25,00</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">25 Nov</span></div>
+            </div>
+            <div class="charge-data" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                IOF de "Tecban Mercado Nova" <!-- ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">0,10</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">25 Nov</span></div>
+            </div>
+            <div class="charge-data" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                Dia Brasil Lj <!-- ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">39,43</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges --><!-- ngIf: !failed -->
+          <div class="charge ng-scope" ng-repeat="charge in charges" ng-if="!failed" "="">
+            <div class="time">
+              <div class="cell"><span class="date ng-binding">25 Nov</span></div>
+            </div>
+            <div class="charge-data" ng-class="isCharge(charge.amount)">
+              <div class="description ng-binding">
+                Edson Oliveira de Jesu <!-- ngIf: charge.charges > 1 -->
+              </div>
+              <div class="amount ng-binding">15,43</div>
+            </div>
+          </div>
+          <!-- end ngIf: !failed --><!-- end ngRepeat: charge in charges -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>

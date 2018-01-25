@@ -1,0 +1,44 @@
+:root {
+  --nubank: #69327F;
+}
+
+.total-checked {
+  padding-right: 0.8rem;
+  color: #000;
+  text-align: right;
+  background-color: #fff;
+}
+.bill-check {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.bill-check input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+.bill-check__icon {
+  position: relative;
+  display: block;
+  width: 1em;
+  height: 1em;
+  border: 1px solid var(--nubank);
+}
+.bill-check__icon::before {
+  color: purple;
+  font-size: 1.5em;
+  position: absolute;
+  top: -8px;
+  line-height: 1;
+}
+.bill-check input:checked + .bill-check__icon::before {
+  content: "✔";
+}
