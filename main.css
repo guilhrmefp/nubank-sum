@@ -2,6 +2,11 @@
   --nubank: #69327F;
 }
 
+.bills .charges .charge .charge-data .description {
+  position: relative;
+  padding-left: 34px !important;
+}
+
 .total-checked {
   padding-right: 0.8rem;
   color: #000;
@@ -9,10 +14,12 @@
   background-color: #fff;
 }
 .bill-check {
-  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(calc(-50% + 1px)); /* alignment issues */
   vertical-align: middle;
   padding: 5px;
-  margin-right: 10px;
   cursor: pointer;
 }
 .bill-check input {
