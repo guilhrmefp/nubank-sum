@@ -1,5 +1,5 @@
-_TOTAL = 0
-_TAB = document.querySelector('.md-tab-content:not(.ng-hide)')
+let _TOTAL = 0
+let _TAB = document.querySelector('.md-tab-content:not(.ng-hide)')
 
 let totalTheme = '<li class="group ng-scope total-checked"><div class="label">Total selecionado</div><div class="amount positive ng-binding">R$0</div></li>'
 _TAB.querySelector('.summary ul').insertAdjacentHTML('beforeend', totalTheme)

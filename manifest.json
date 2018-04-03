@@ -10,7 +10,7 @@
     "activeTab"
   ],
   "background": {
-    "scripts": ["nu.js"],
+    "scripts": ["dist/js/nu.js"],
     "persistent": false
   }
 }

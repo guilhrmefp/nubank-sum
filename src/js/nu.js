@@ -1,5 +1,5 @@
 const cssFile = {
-  file: 'main.css'
+  file: './../css/main.css'
 }
 const jsFile = {
   file: 'main.js'
